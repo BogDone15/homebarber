@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylist edit</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+    <div class="group__wrap">
+        <header class="header">
+            <div class="navbar">
+                <div class="container">
+                    <div class="navbar-wrap">
+                        <a class="logo"href="index.html" id="logo">
+                            HOME<b>BARBER</b>
+                        </a>
+                        <div class="nav">
+                            <a class="nav__link" href="#">Blog</a>
+                            <a class="nav__link hide__link" href="#">
+                                <div class="nav__link-stylist-icon">
+                                    <img class="nav__icon" src="./images/Vector.png" alt="#">
+                                </div>
+                                <div class="nav__link-stylist-text">
+                                    BECOME STYLIST
+                                </div>
+                            </a> 
+                            <a href="./login.html" class="nav__link-login">
+                                <img src="./images/icons/login.svg" alt="login">
+                            </a>                           
+                        </div>
+                        
+                        <button class="burger" type="button" id="navToggle">
+                            <img class="burger__icon" src="./images/icons/burger.svg" alt="">
+                        </button>
+                    </div>               
+                </div>
+            </div>
+        </header>   
+    
+        <section class="user">
+            <div class="container">
+                <div class="user__block">
+                    <div class="user__block-wrapper">
+                        <div class="user__block-content">
+                            <img src="./images/icons/master.svg" alt="user" class="user__block-photo">
+                            <form class="upload__wrap">
+                                <label class="user__block-input" for="upload">Set new Photo</label>
+                                <input accept="image/*" type="file" class="hideupload" id="upload">
+                            </form>
+                        </div>
+                        <div class="form__name">
+                            <form>
+                                <div class="wrap-input error-input">
+                                    <label for="first-name"></label>
+                                    <input class="input" type="text" name="first-name" placeholder="First name">
+                                    <div id="error__name" class="error">
+                                        <div>danger message error name</div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form>
+                                <div class="wrap-input error-input">
+                                    <label for="second-name"></label>
+                                    <input class="input" type="text" name="second-name" placeholder="Second name">
+                                    <div id="error__name" class="error">
+                                        <div>danger message error name</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form__info">
+                            <form>
+                                <div type="" class="user__btn">
+                                    <div class="user__btn-title">Change Password</div>
+                                    <label for="change-psw"></label>
+                                    <input type="password" name="change-psw">
+                                    <button class="btn"><img src="./images/icons/whitearrow-right.svg" alt=""></button>
+                                </div>
+                            </form>
+                            <div id="error__password" class="error">
+                                <div>danger message error password</div>
+                            </div>
+                        </div>
+    
+                        <div class="form__info">
+                            <form>
+                                <div type="" class="user__btn">
+                                    <div class="user__btn-title">Change Email</div>
+                                    <div class="user__btn-form">
+                                        <label for="change-email"></label>
+                                        <input type="email" name="change-email" placeholder="andycarnegy@gmail.com">
+                                        <button class="btn"><img src="./images/icons/whitearrow-right.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="error__email" class="error">
+                                <div>danger message error email</div>
+                            </div>
+                        </div>
+    
+                        <div class="form__info">
+                            <form>
+                                <div type="" class="user__btn">
+                                    <div class="user__btn-title">Change Number</div>
+                                    <div class="user__btn-form">
+                                        <label for="change-num"></label>
+                                        <input type="tel" name="change-num" placeholder="+(555) 555-1234"
+                                            style="width: 125px;">
+                                        <button class="btn"><img src="./images/icons/whitearrow-right.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="error__number" class="error">
+                                <div>danger message error number</div>
+                            </div>
+                        </div>
+                        <div class="form__info form-exit">
+                            <a href="#" class="form__info-logout">
+                                Log out
+                            </a>
+                        </div>
+                        
+                        <div class="nudity">
+                            <div class="nudity__content">
+                                <div class="nudity__content-title">
+                                    <div style="margin-right: 10px;">Your account is not active</div>
+                                    <img src="./images/icons/smile.svg" alt="smile">
+                                </div>
+                                <div class="nudity__content-subtitle">
+                                    Download the app to activate account
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-buttons master-buttons" style="position: absolute; right: 10%; bottom: 0;">
+                            <a href="#"><img src="images/appStore.png"></a>
+                            <a href="#"><img src="images/googolePlay.png"></a>
+                        </div>
+                    </div>
+
+
+                    <div class="user__img">
+                        <div class="hide__element">
+                            <div class="block-buttons user__buttons" style="position: absolute; right: 11%; bottom: 12%;">
+                                <a href="#"><img src="images/appStore.png"></a>
+                                <a href="#"><img src="images/googolePlay.png"></a>
+                            </div>
+                            <div class="nudity hide__nudity">
+                                <div class="nudity__content">
+                                    <div class="nudity__content-title">
+                                        <div style="margin-right: 10px;">Your account is not active</div>
+                                        <img src="./images/icons/smile.svg" alt="smile">
+                                    </div>
+                                    <div class="nudity__content-subtitle">
+                                        Download the app to activate account
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>     
+    </div>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal__wrap">
+        <div class="container">
+            <div class="modal__header">
+                <div class="modal__header-logo">
+                    HOME<b>BARBER</b>
+                </div>
+                <div class="modal__header-close">&times;</div>
+            </div>  
+        </div>  
+    </div>
+    <div class="modal__content">
+        <div class="container">
+            <div class="modal-content">
+                <a class="modal-content-links" href="#">Login</a>
+                <a class="modal-content-links" href="#">Registation</a>
+                <a class="modal-content-links" href="#">Company</a>
+                <a class="modal-content-links" href="#">Contact Us</a>
+            </div>                
+        </div>              
+    </div>   
+    <button type="button" class="modal__button">
+        <div class="nav__link-stylist-icon">
+            <img class="nav__icon" src="./images/Vector.png" alt="#">
+        </div>
+        <div class="div">
+            BECOME STYLIST
+        </div>
+    </button>                         
+</div>
+    
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>

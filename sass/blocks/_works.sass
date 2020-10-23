@@ -1,0 +1,47 @@
+.works
+    padding: 97px 0 105px
+    background-color: #ffffff
+    &__title
+        @include title()
+        color: #2F3547
+    &__block
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__content
+        display: flex
+        width: 25%
+        &-group
+            margin-left: 20px
+            margin-top: 8px
+            &-title
+                font-style: normal
+                font-weight: bold
+                font-size: 24px
+                line-height: 30px
+                margin-bottom: 20px               
+                color: #000000
+            &-text
+                @include text()
+                color: #535353
+                max-width: 181px
+
+@media (max-width: 991px)
+    .works
+        &__content
+            width: 50%
+        &__title
+            text-align: center
+        &__content
+            margin-bottom: 50px
+            display: flex
+            justify-content: center
+
+@media (max-width: 565px)
+    .works
+        &__content
+            width: 100%
+            &-group
+                &-text
+                    max-width: none
+

@@ -1,0 +1,48 @@
+.knock
+    padding: 90px 0 100px
+    &__wrap 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        padding-left: 30px
+        padding-right: 80px
+        &-left
+            display: flex
+            align-items: center
+    &__content
+        width: 430px
+        color: #ffffff
+        margin-left: 35px
+        &-title
+            @include subtitle()
+            margin-bottom: 35px
+        &-text
+            @include text()
+
+@media (max-width: 991px)
+    .knock__wrap
+        justify-content: center
+        padding-right: 0
+
+@media (max-width: 767px)
+    .knock
+        &__wrap
+            padding-right: 30px
+            &-left
+                align-items: flex-start
+                margin-bottom: 40px
+                margin-right: 40px
+        &__block
+            img
+                width: 70px
+                height: 100px
+        &__content
+            max-width: 190px
+            margin-left: 20px
+            &-title
+                margin-bottom: 20px
+
+@media (max-width: 565px)
+    .knock__wrap-left
+        margin-right: 0

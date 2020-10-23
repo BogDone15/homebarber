@@ -1,0 +1,211 @@
+.reg__wrap
+    position: relative
+.registration
+    &__img-client
+        position: absolute
+        right: -135px
+        top: -30px
+        background: no-repeat
+        background-size: cover
+        height: 100vh
+        width: 1024px
+        display: block
+        clip-path: polygon(39% 0, 100% 0, 100% 95%, 28% 95%)
+    &__block
+        &-content
+            display: flex
+            flex-direction: column
+            justify-content: center
+            height: calc( 100vh - 150px )                  
+        &-links
+            display: flex
+            align-items: center
+            margin-bottom: 65px
+            &-log
+                font-style: normal
+                font-weight: 500
+                font-size: 24px
+                line-height: 32px
+                margin-right: 50px
+                color: #9E9E9E
+                text-decoration: none     
+                padding-bottom: 17px           
+            &-sign
+                font-style: normal
+                font-weight: 500
+                font-size: 24px
+                line-height: 32px
+                color: #9E9E9E
+                text-decoration: none
+                padding-bottom: 17px
+        &-line
+            display: block
+            width: 44px
+            height: 1px
+            margin-bottom: 45px        
+        &-back
+            display: flex
+            align-items: center
+            background: rgba(180, 163, 129, 0.2)
+            margin-top: 20px
+            border-radius: 50%
+            width: 50px
+            height: 50px           
+            cursor: pointer
+            text-decoration: none
+            div
+                font-style: normal
+                font-weight: 500
+                font-size: 17px
+                line-height: 22px
+                color: #ffffff
+                margin-left: 2px
+        &-buttons
+            display: flex
+        &-btn
+            display: block
+            margin-right: 39px
+            background: rgba(180, 163, 129, 0.2)
+            border: none
+            outline: none
+            border-radius: 3px
+            padding: 11px 16px 13px 19px
+            cursor: pointer
+            border: 1px solid transparent
+            transition: all .2s linear
+            &:hover
+                background: transparent
+                border: 1px solid rgba(180, 163, 129, 0.2)
+            &:last-child
+                margin-right: 0
+            &-wrap
+                display: flex
+                align-items: center
+                width: 100px
+                img
+                    margin-right: 18px
+                div
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 14px
+                    line-height: 19px
+                    color: #FFFFFF
+
+.wrap-input
+    position: relative
+    display: flex
+    align-items: center
+    border-bottom: 1px solid rgba(180, 163, 129, 0.5)
+    margin-bottom: 18px
+    width: 340px
+    padding-bottom: 10px
+    img
+        margin-right: 13px
+        display: block
+
+.input
+    display: block
+    width: 100%
+    background: transparent
+    border: none
+    outline: none
+    font-family: Futura
+    font-style: normal
+    font-weight: 500
+    font-size: 15px
+    line-height: 20px
+    color: #9E9E9E
+    &:-webkit-autofill
+        -webkit-text-fill-color: #9E9E9E
+        -webkit-box-shadow: 0 0 0px 1000px transparent inset
+        transition: background-color 5000s ease-in-out 0s
+    &:invalid
+        box-shadow: none
+        
+.actives
+    font-style: normal
+    font-weight: bold
+    border-bottom: 3px solid #D9B465
+    padding-bottom: 17px
+    color: #FFFFFF
+    font-size: 40px
+
+.forgot__password 
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 19px
+    color: #D9B465
+    text-decoration: none 
+    border-bottom: 1px solid transparent
+    padding-bottom: 1px
+    &:hover
+        border-bottom: 1px solid #D9B465
+    
+.prompt
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 16px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #B8B6B6
+    margin-top: 38px
+    margin-bottom: 10px
+
+@media (max-width: 1199px)
+    .registration__img-client
+        width: 824px
+
+@media (max-width: 1024px)
+    .registration__img-client
+        display: none
+    .registration__block-content
+        align-items: center
+
+@media (max-width: 820px) and (orientation: landscape)
+    .registration__block 
+        height: auto
+        padding: 90px 0
+    .registration__block-line
+        margin-bottom: 25px
+    .reg-btn
+        margin: 16px 0 18px !important
+
+@media (max-width: 812px)
+    .registration__block-buttons
+        justify-content: space-between
+    .registration__img-client
+        display: none
+    .registration__block-links
+        margin-bottom: 25px
+
+@media (max-width: 812px) and (orientation: landscape)
+    .registration__block-back
+        display: none
+
+
+@media (min-width: 600px) and (orientation: portrait) and ( max-width: 768px ) and (orientation: portrait)   
+    .registration__block-content
+        display: flex
+        flex-direction: column
+        align-items: center
+
+@media (max-width: 565px)
+    .registration__block
+        &-back
+            display: none
+        &-btn
+            margin-right: 0
+        &-links
+            justify-content: space-between
+            padding-left: 10px
+            padding-right: 10px
+        &-line
+            display: none
+
+@media (max-width: 329px)
+    #login
+        width: 100%
+    .registration__block-content
+        margin-top: 30px

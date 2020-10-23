@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Login</title>
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+ <div class="group__wrap" style="overflow: hidden;">
+  <header class="header">
+   <div class="navbar">
+    <div class="container">
+     <div class="navbar-wrap">
+      <a class="logo" href="index.html" id="logo">
+       HOME<b>BARBER</b>
+      </a>
+      <div class="nav">
+       <a class="nav__link" href="#">Blog</a>
+       <a class="nav__link hide__link" href="#">
+        <div class="nav__link-stylist-icon">
+         <img class="nav__icon" src="./images/Vector.png" alt="#">
+        </div>
+        <div class="nav__link-stylist-text">
+         BECOME STYLIST
+        </div>
+       </a>
+       <a href="./registration.html" class="nav__link-login">
+        <img src="./images/icons/login.svg" alt="login">
+       </a>
+      </div>
+
+      <button class="burger" type="button" id="navToggle">
+       <img class="burger__icon" src="./images/icons/burger.svg" alt="">
+      </button>
+     </div>
+    </div>
+   </div>
+  </header>
+
+  <section class="user">
+   <div class="container">
+    <div class="login__block">
+     <div class="login_block-wrapper">
+      <a class="login__block-content" href="master.html">
+       <img src="./images/stylish-man.jpg" alt="user" class="login__block-photo">
+       <div class="login__block-link">Log In Master</div>
+      </a>
+      <a class="login__block-content" href="master.html">
+       <img src="./images/client-man.jpg" alt="user" class="login__block-photo">
+       <div class="login__block-link">Log In User</div>
+      </a>
+     </div>
+     <div class="user__img">
+     </div>
+    </div>
+   </div>
+  </section>
+ </div>
+ </div>
+
+ <!-- Modal -->
+ <div id="myModal" class="modal">
+  <div class="modal__wrap">
+   <div class="container">
+    <div class="modal__header">
+     <div class="modal__header-logo">
+      HOME<b>BARBER</b>
+     </div>
+     <div class="modal__header-close">&times;</div>
+    </div>
+   </div>
+  </div>
+  <div class="modal__content">
+   <div class="container">
+    <div class="modal-content">
+     <a class="modal-content-links" href="#">Login</a>
+     <a class="modal-content-links" href="#">Registation</a>
+     <a class="modal-content-links" href="#">Company</a>
+     <a class="modal-content-links" href="#">Contact Us</a>
+    </div>
+   </div>
+  </div>
+  <button type="button" class="modal__button">
+   <div class="nav__link-stylist-icon">
+    <img class="nav__icon" src="./images/Vector.png" alt="#">
+   </div>
+   <div class="div">
+    BECOME STYLIST
+   </div>
+  </button>
+ </div>
+
+ <script src="js/modal.js"></script>
+</body>
+
+</html>

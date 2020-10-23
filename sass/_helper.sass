@@ -1,0 +1,41 @@
+@mixin title()
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 53px
+    margin-bottom: 60px
+
+@mixin text()
+    @include OpenSans
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 24px
+
+@mixin button()
+    @include Futura
+    cursor: pointer
+    background-color: #D9B465
+    border: 1px solid transparent
+    outline: none
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 19px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #FFFFFF
+    padding: 14px 33px
+    border-radius: 3px
+    transition: all .2s linear
+    &:hover
+        border: 1px solid #D9B465
+        background: transparent
+
+@mixin subtitle()
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    color: #FFFFFF
+

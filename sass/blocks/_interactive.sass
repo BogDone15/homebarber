@@ -1,0 +1,44 @@
+.interactive
+    background: url('../images/apppc.png') no-repeat
+    background-size: cover
+    min-height: 600px
+    &__content
+        padding: 112px 0 150px
+        width: 670px
+        margin-left: auto
+        &-title
+            font-size: 18px
+            margin-bottom: 14px
+        &-subtitle
+            @include title()
+            color: #FFFFFF
+            margin-bottom: 30px
+        &-text
+            @include text()
+            color: #F0F0F0
+            width: 430px
+            margin-bottom: 30px
+
+@media (max-width: 991px)
+    .interactive__content
+        padding: 60px 0 70px
+        width: 100%
+        margin-left: 0
+        text-align: center
+        &-text
+            margin-left: auto
+            margin-right: auto
+
+@media (max-width: 820px) and (orientation: landscape)
+    .interactive
+        background: url('../images/appimagemob.png') !important
+
+@media (max-width: 565px)
+    .interactive
+        background: url('../images/appimagemob.png') !important
+        background-position: 24% center !important
+        &__content
+            &-text
+                width: 100%
+                margin-left: 0
+                margin-right: 0
