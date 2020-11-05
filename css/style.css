@@ -746,13 +746,13 @@ body {
   margin-right: 12px;
 }
 
-.unique__block-img img {
+.unique__block-image {
   display: block;
   height: 100%;
   max-width: auto;
 }
 
-.unique__block-img-hide img {
+.unique__block-img-hide-img {
   display: none;
   height: 100%;
   width: 276px;
@@ -786,10 +786,10 @@ body {
     width: 270px;
     justify-content: center;
   }
-  .unique__block-img img {
+  .unique__block-image {
     display: none;
   }
-  .unique__block-img-hide img {
+  .unique__block-img-hide-img {
     display: block;
     margin: 0 auto;
   }
