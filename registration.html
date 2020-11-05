@@ -21,7 +21,7 @@
                         </a>
                         <div class="nav">
                             <a class="nav__link" href="#">Blog</a>
-                            <a class="nav__link hide__link" href="#">
+                            <a class="nav__link hide__link" href="stylist.html">
                                 <div class="nav__link-stylist-icon">
                                     <img class="nav__icon" src="./images/Vector.png" alt="#">
                                 </div>
@@ -29,7 +29,7 @@
                                     BECOME STYLIST
                                 </div>
                             </a>
-                            <a href="./login.html" class="nav__link-login">
+                            <a href="registration.html" class="nav__link-login">
                                 <img src="./images/icons/login.svg" alt="login">
                             </a>
                         </div>
@@ -53,8 +53,8 @@
                         <div class="registration__block-content">
 
                             <div class="registration__block-links">
-                                <a id="loginlink" href="#" class="registration__block-links-log actives">Log in</a>
-                                <a id="signuplink" href="#" class="registration__block-links-sign">Sign up</a>
+                                <a id="loginlink" href="#" class="registration__block-links-log actives">Логин</a>
+                                <a id="signuplink" href="#" class="registration__block-links-sign">Регистрация</a>
                             </div>
                             <div id="login" style="margin-top: 20px;">
                                 <form action="/" method="">
@@ -106,60 +106,19 @@
                             </div>
 
                             <div id="signup" style="display: none;">
-                                <form action="/" method="">
-                                    <div class="wrap-input error-input">
-                                        <label for="username"></label>
-                                        <img src="./images/icons/icon-name.svg" alt="name">
-                                        <input class="input" type="text" name="username" placeholder="Name">
-                                        <div id="error__name" class="error">
-                                            <div>Имя и фамилия не могут быть пустыми</div>
-                                        </div>
+                                <div class="login__block" style="height: 394px;">
+                                    <div class="login_block-wrapper registration-block">
+                                        <a class="login__block-content registration-block-content" href="regMaster.html">
+                                            <img src="./images/stylish-man.jpg" alt="user"
+                                                class="login__block-photo registration-photo">
+                                            <div class="login__block-link">Мастер</div>
+                                        </a>
+                                        <a class="login__block-content" href="regClient.html">
+                                            <img src="./images/client-man.jpg" alt="user"
+                                                class="login__block-photo registration-photo">
+                                            <div class="login__block-link">Клиент</div>
+                                        </a>
                                     </div>
-                                    <div class="wrap-input error-input">
-                                        <label for="email"></label>
-                                        <img src="./images/icons/icon-email.svg" alt="email">
-                                        <input class="input" type="email" name="email" placeholder="Email">
-                                        <div id="error__email" class="error">
-                                            <div>Значение должно быть действительным электронным адресом</div>
-                                        </div>
-                                    </div>
-                                    <div class="wrap-input error-input">
-                                        <label for="tel"></label>
-                                        <img src="./images/icons/tel.svg" style="width: 16px;height: 16px;" alt="tel">
-                                        <input class="input" type="tel" name="tel" placeholder="Phone number">
-                                        <div id="error__email" class="error">
-                                            <div>Телефон не может быть пустым</div>
-                                        </div>
-                                    </div>
-                                    <div class="wrap-input error-input">
-                                        <label for="password"></label>
-                                        <img src="./images/icons/icon-password.svg" alt="password">
-                                        <input class="input" type="password" name="password" placeholder="Password">
-                                        <div id="error__password" class="error">
-                                            <div>Пароль не меньше 8 символов</div>
-                                        </div>
-                                    </div>
-                                    <div class="wrap-input error-input">
-                                        <label for="confirm-password"></label>
-                                        <img src="./images/icons/icon-password.svg" alt="confirm password">
-                                        <input class="input" type="password" name="confirm-password"
-                                            placeholder="Confirm password">
-                                        <div id="error__confirm-password" class="error">
-                                            <div>Пароль не меньше 8 символов</div>
-                                        </div>
-                                    </div>
-
-                                    <button class="unique__block-button" type="button"
-                                        style="padding: 14px 54px 13px;width: 179px;margin: 30px 0 35px;">
-                                        <div>Sign up</div>
-                                    </button>
-                                    <button class="unique__block-button" type="button"
-                                        style="padding: 14px 60px 13px;width: 179px;margin: 30px 0 30px; display: none;">
-                                        <div>Log in</div>
-                                    </button>
-                                </form>
-                                <div class="forgot__password" style="display: none;">
-                                    Forget password?
                                 </div>
                             </div>
                         </div>
@@ -198,9 +157,9 @@
             <div class="nav__link-stylist-icon">
                 <img class="nav__icon" src="./images/Vector.png" alt="#">
             </div>
-            <div class="div">
+            <a class="div" href="stylist.html">
                 BECOME STYLIST
-            </div>
+            </a>
         </button>
     </div>
 
@@ -237,9 +196,7 @@
         </div>
     </div>
 
-    <script src="./js/reg.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/password.js"></script>
+    <script src="./js/app.js"></script>
 
 </body>
 

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Registation Master</title>
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+ <div class="group__wrap">
+  <header class="header">
+   <div class="navbar">
+    <div class="container">
+     <div class="navbar-wrap">
+      <a class="logo" href="index.html" id="logo">
+       HOME<b>BARBER</b>
+      </a>
+      <div class="nav">
+       <a class="nav__link" href="#">Blog</a>
+       <a class="nav__link hide__link" href="stylist.html">
+        <div class="nav__link-stylist-icon">
+         <img class="nav__icon" src="./images/Vector.png" alt="#">
+        </div>
+        <div class="nav__link-stylist-text">
+         BECOME STYLIST
+        </div>
+       </a>
+       <a href="registration.html" class="nav__link-login">
+        <img src="./images/icons/login.svg" alt="login">
+       </a>
+      </div>
+
+      <button class="burger" type="button" id="navToggle">
+       <img class="burger__icon" src="./images/icons/burger.svg" alt="">
+      </button>
+     </div>
+    </div>
+   </div>
+  </header>
+
+  <section class="registration">
+   <div class="container">
+    <div class="reg__wrap">
+     <a href="registration.html" class="registration__block-back">
+      <img src="./images/icons/whitearrow.svg" alt="back">
+      <div>Back</div>
+     </a>
+     <div class="registration__block">
+      <div class="registration__block-content">
+
+       <div class="registration__block-links">
+
+        <a id="signuplink" href="#" class="registration__block-links-sign actives">Регистрация мастера</a>
+       </div>
+       <div id="signup">
+        <form action="/" method="">
+         <div class="wrap-input error-input">
+          <label for="username"></label>
+          <img src="./images/icons/icon-name.svg" alt="name">
+          <input class="input" type="text" name="username" placeholder="Name">
+          <div id="error__name" class="error">
+           <div>Имя и фамилия не могут быть пустыми</div>
+          </div>
+         </div>
+         <div class="wrap-input error-input">
+          <label for="email"></label>
+          <img src="./images/icons/icon-email.svg" alt="email">
+          <input class="input" type="email" name="email" placeholder="Email">
+          <div id="error__email" class="error">
+           <div>Значение должно быть действительным электронным адресом</div>
+          </div>
+         </div>
+         <div class="wrap-input error-input">
+          <label for="tel"></label>
+          <img src="./images/icons/tel.svg" style="width: 16px;height: 16px;" alt="tel">
+          <input class="input phone__num" type="tel" name="tel" placeholder="Phone number">
+          <div id="error__email" class="error">
+           <div>Телефон не может быть пустым</div>
+          </div>
+         </div>
+         <div class="wrap-input error-input">
+          <label for="password"></label>
+          <img src="./images/icons/icon-password.svg" alt="password">
+          <input class="input" type="password" name="password" placeholder="Password">
+          <div id="error__password" class="error">
+           <div>Пароль не меньше 8 символов</div>
+          </div>
+         </div>
+         <div class="wrap-input error-input">
+          <label for="confirm-password"></label>
+          <img src="./images/icons/icon-password.svg" alt="confirm password">
+          <input class="input" type="password" name="confirm-password" placeholder="Confirm password">
+          <div id="error__confirm-password" class="error">
+           <div>Пароль не меньше 8 символов</div>
+          </div>
+         </div>
+
+         <button class="unique__block-button" type="button"
+          style="padding: 14px 54px 13px;width: 179px;margin: 30px 0 35px;">
+          <div>Sign up</div>
+         </button>
+         <button class="unique__block-button" type="button"
+          style="padding: 14px 60px 13px;width: 179px;margin: 30px 0 30px; display: none;">
+          <div>Log in</div>
+         </button>
+        </form>
+        <div class="forgot__password" style="display: none;">
+         Forget password?
+        </div>
+        <div class="nudity">
+         <div class="nudity__content">
+          <div class="nudity__content-title">
+           <div style="margin-right: 10px;">Your account is not active</div>
+           <img src="./images/icons/smile.svg" alt="smile">
+          </div>
+          <div class="nudity__content-subtitle">
+           Download the app to activate account
+          </div>
+         </div>
+        </div>
+        <div class="block-buttons user__buttons" style="display: none;">
+         <a href="#"><img src="images/appStore.png"></a>
+         <a href="#"><img src="images/googolePlay.png"></a>
+        </div>
+       </div>
+      </div>
+      <div class="registration__block-img">
+       <img class="registration__img-client" src="./images/client.png" alt="barber">
+       <div class="hide__element">
+        <div class="block-buttons user__buttons" style="position: absolute; right: 11%; bottom: 12%;">
+         <a href="#"><img src="images/appStore.png"></a>
+         <a href="#"><img src="images/googolePlay.png"></a>
+        </div>
+        <div class="nudity hide__nudity">
+         <div class="nudity__content">
+          <div class="nudity__content-title">
+           <div style="margin-right: 10px;">Your account is not active</div>
+           <img src="./images/icons/smile.svg" alt="smile">
+          </div>
+          <div class="nudity__content-subtitle">
+           Download the app to activate account
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+ </div>
+
+ <!-- Modal -->
+ <div id="myModal" class="modal">
+  <div class="modal__wrap">
+   <div class="container">
+    <div class="modal__header">
+     <div class="modal__header-logo">
+      HOME<b>BARBER</b>
+     </div>
+     <div class="modal__header-close">&times;</div>
+    </div>
+   </div>
+  </div>
+  <div class="modal__content">
+   <div class="container">
+    <div class="modal-content">
+     <a class="modal-content-links" href="#">Login</a>
+     <a class="modal-content-links" href="#">Registation</a>
+     <a class="modal-content-links" href="#">Company</a>
+     <a class="modal-content-links" href="#">Contact Us</a>
+    </div>
+   </div>
+  </div>
+  <button type="button" class="modal__button">
+   <div class="nav__link-stylist-icon">
+    <img class="nav__icon" src="./images/Vector.png" alt="#">
+   </div>
+   <a class="div" href="stylist.html">
+    BECOME STYLIST
+   </a>
+  </button>
+ </div>
+
+ <!-- Modal forget password -->
+ <div id="pwModal" class="pwmodal">
+  <div class="modal__wrap">
+   <div class="container">
+    <div class="modal__header">
+     <div class="modal__header-logo">
+      HOME<b>BARBER</b>
+     </div>
+     <div class="pwmodal__header-close">&times;</div>
+    </div>
+   </div>
+  </div>
+  <div class="pwmodal__content">
+   <div class="container">
+    <div class="pwmodal__wrap">
+     <div class="pwmodal__title">
+      Проверка телефона
+     </div>
+     <div class="pwmodal__mob">
+      Введите Ваш телефон
+     </div>
+     <form action="password.html">
+      <label for="tel"></label>
+      <input class="pwmodal__input" type="tel" name="tel" value="">
+      <button class="pwmodal__button" type="submit">
+       Отправить
+      </button>
+     </form>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <script src="./js/app.js"></script>
+
+</body>
+
+</html>

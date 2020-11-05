@@ -21,7 +21,7 @@
                         </a>
                         <div class="nav">
                             <a class="nav__link" href="#">Blog</a>
-                            <a class="nav__link hide__link" href="#">
+                            <a class="nav__link hide__link" href="stylist.html">
                                 <div class="nav__link-stylist-icon">
                                     <img class="nav__icon" src="./images/Vector.png" alt="#">
                                 </div>
@@ -29,7 +29,7 @@
                                     BECOME STYLIST
                                 </div>
                             </a>
-                            <a href="./login.html" class="nav__link-login">
+                            <a href="registration.html" class="nav__link-login">
                                 <img src="./images/icons/login.svg" alt="login">
                             </a>
                         </div>
@@ -79,7 +79,8 @@
                                     <div class="user__btn-title">Change Password</div>
                                     <label for="change-psw"></label>
                                     <input type="password" name="change-psw">
-                                    <button class="btn"><img src="./images/icons/whitearrow-right.svg" alt=""></button>
+                                    <button class="btn btn__pw"><img src="./images/icons/whitearrow-right.svg"
+                                            alt=""></button>
                                 </div>
                             </form>
                             <div id="error__password" class="error">
@@ -93,7 +94,7 @@
                                     <div class="user__btn-form">
                                         <label for="change-email"></label>
                                         <input type="email" name="change-email" placeholder="andycarnegy@gmail.com">
-                                        <button class="btn"><img src="./images/icons/whitearrow-right.svg"
+                                        <button class="btn btn__email"><img src="./images/icons/whitearrow-right.svg"
                                                 alt=""></button>
                                     </div>
                                 </div>
@@ -110,7 +111,7 @@
                                         <label for="change-num"></label>
                                         <input type="tel" name="change-num" placeholder="+(555) 555-1234"
                                             style="width: 125px;">
-                                        <button class="btn"><img src="./images/icons/whitearrow-right.svg"
+                                        <button class="btn btn__tel"><img src="./images/icons/whitearrow-right.svg"
                                                 alt=""></button>
                                     </div>
                                 </div>
@@ -125,15 +126,40 @@
                                 Log out
                             </a>
                         </div>
+                        <div class="nudity">
+                            <div class="nudity__content">
+                                <div class="nudity__content-title">
+                                    <div style="margin-right: 10px;">Your account is not active</div>
+                                    <img src="./images/icons/smile.svg" alt="smile">
+                                </div>
+                                <div class="nudity__content-subtitle">
+                                    Download the app to activate account
+                                </div>
+                            </div>
+                        </div>
                         <div class="block-buttons user__buttons" style="display: none;">
                             <a href="#"><img src="images/appStore.png"></a>
                             <a href="#"><img src="images/googolePlay.png"></a>
                         </div>
                     </div>
                     <div class="user__img">
-                        <div class="block-buttons user__buttons" style="position: absolute; right: 11%; bottom: 12%;">
-                            <a href="#"><img src="images/appStore.png"></a>
-                            <a href="#"><img src="images/googolePlay.png"></a>
+                        <div class="hide__element">
+                            <div class="block-buttons user__buttons"
+                                style="position: absolute; right: 11%; bottom: 12%;">
+                                <a href="#"><img src="images/appStore.png"></a>
+                                <a href="#"><img src="images/googolePlay.png"></a>
+                            </div>
+                            <div class="nudity hide__nudity">
+                                <div class="nudity__content">
+                                    <div class="nudity__content-title">
+                                        <div style="margin-right: 10px;">Your account is not active</div>
+                                        <img src="./images/icons/smile.svg" alt="smile">
+                                    </div>
+                                    <div class="nudity__content-subtitle">
+                                        Download the app to activate account
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -167,14 +193,98 @@
             <div class="nav__link-stylist-icon">
                 <img class="nav__icon" src="./images/Vector.png" alt="#">
             </div>
-            <div class="div">
+            <a class="div" href="stylist.html">
                 BECOME STYLIST
-            </div>
+            </a>
         </button>
     </div>
 
+    <!-- Button Modal Password -->
+    <div class="btnmodal" id="btnmodal__pw">
+        <div class="btnmodal__wrap">
+            <div class="modal__header-close btnmodal-close btnmodal-close-pw">&times;</div>
+            <form class="btnmodal__form">
+                <label for="new-pw"></label>
+                <input class="btnmodal__input" type="password" name="new-pw" placeholder="Введите старый пароль">
+                <div id="error__name" class="error">
+                    <div>danger message error name</div>
+                </div>
+            </form>
+            <form class="btnmodal__form">
+                <label for="old-pw"></label>
+                <input class="btnmodal__input" type="password" name="old-pw" placeholder="Введите новый пароль">
+                <div id="error__name" class="error">
+                    <div>danger message error name</div>
+                </div>
+            </form>
+            <form class="btnmodal__form">
+                <label for="accept-pw"></label>
+                <input type="password" name="accept-pw" class="btnmodal__input" placeholder="Подтвердите новый пароль">
+                <div id="error__number" class="error">
+                    <div>danger message error number</div>
+                </div>
+            </form>
 
-    <script src="./js/modal.js"></script>
+            <div class="btnmodal__button">
+                Подтвердить
+            </div>
+        </div>
+    </div>
+
+    <!-- Button Modal Email -->
+    <div class="btnmodal" id="btnmodal__email">
+        <div class="btnmodal__wrap">
+            <div class="modal__header-close btnmodal-close btnmodal-close-email">&times;</div>
+            <form class="btnmodal__form">
+                <label for="old-email"></label>
+                <input class="btnmodal__input" type="email" name="old-email" placeholder="Введите старую почту">
+                <div id="error__name" class="error">
+                    <div>danger message error name</div>
+                </div>
+            </form>
+            <form class="btnmodal__form">
+                <label for="new-email"></label>
+                <input class="btnmodal__input" type="email" name="new-email" placeholder="Введите новую почту">
+                <div id="error__name" class="error">
+                    <div>danger message error name</div>
+                </div>
+            </form>
+
+            <div class="btnmodal__button">
+                Подтвердить
+            </div>
+        </div>
+    </div>
+
+    <!-- Button Modal Tel -->
+    <div class="btnmodal" id="btnmodal__tel">
+        <div class="btnmodal__wrap">
+            <div class="modal__header-close btnmodal-close btnmodal-close-tel">&times;</div>
+            <form class="btnmodal__form">
+                <label for="old-tel"></label>
+                <input class="btnmodal__input btnmodal__input-old-tel" type="tel" name="old-tel"
+                    placeholder="Введите старый номер">
+                <div id="error__name" class="error">
+                    <div>danger message error name</div>
+                </div>
+            </form>
+            <form class="btnmodal__form">
+                <label for="new-tel"></label>
+                <input class="btnmodal__input btnmodal__input-new-tel" type="tel" name="new-tel"
+                    placeholder="Введите новый номер">
+                <div id="error__name" class="error">
+                    <div>danger message error name</div>
+                </div>
+            </form>
+
+            <div class="btnmodal__button">
+                Подтвердить
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+ 
 </body>
 
 </html>
