@@ -793,6 +793,7 @@ body {
   }
   .unique__block-image {
     display: none;
+    /* width: 0; */
   }
   .unique__block-img-hide-img {
     display: block;
