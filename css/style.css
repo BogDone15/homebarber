@@ -246,6 +246,7 @@ body {
 
 .intro__img {
   position: absolute;
+  object-fit: cover;
   right: -135px;
   top: -61px;
   background: no-repeat;
@@ -257,6 +258,7 @@ body {
 }
 
 .intro__img-client {
+  object-fit: cover;
   position: absolute;
   right: -133px;
   top: 0;
@@ -793,7 +795,6 @@ body {
   }
   .unique__block-image {
     display: none;
-    /* width: 0; */
   }
   .unique__block-img-hide-img {
     display: block;
