@@ -739,12 +739,13 @@ body {
 
 .unique__block {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.unique__block-content {
-  margin-top: 60px;
+.unique__block-img {
+  width: 50%;
 }
 
 .unique__block-title {
@@ -800,8 +801,8 @@ body {
 
 .unique__block-image {
   display: block;
-  height: 100%;
-  max-width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 .unique__block-img-hide-img {
