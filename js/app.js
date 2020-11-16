@@ -98,7 +98,7 @@ function setCursorPosition(pos, elem) {
     elem.focus();
     if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
     else if (elem.createTextRange) {
-     var range = elem.createTextRange();
+     let range = elem.createTextRange();
      range.collapse(true);
      range.moveEnd("character", pos);
      range.moveStart("character", pos);
